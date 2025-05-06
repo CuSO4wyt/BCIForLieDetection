@@ -33,22 +33,16 @@
             padding-top: 80px; /* Adjust the value based on navbar height */
         }
 
-        /* Flexbox container for video and text */
-        .video-and-text-container {
-            display: flex;
-            justify-content: flex-start; /* Align video to the left */
-            align-items: center; /* Vertically center content */
-            gap: 2rem; /* Space between video and text */
-        }
+        /* Keep video responsive with a 16:9 aspect ratio */
+
 
         .video-container-9x16 {
-            position: relative;
-            padding-bottom: 177.78%; /* 9:16 aspect ratio */
-            height: 0;
-            overflow: hidden;
-            border-radius: 12px;
-            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-            width: 50%; /* Set video width */
+          position: relative;
+          padding-bottom: 177.78%; /* 9:16 aspect ratio */
+          height: 0;
+          overflow: hidden;
+          border-radius: 12px;
+          box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
         }
 
         /* Adjust navbar if necessary */
@@ -144,25 +138,16 @@
         <div class="container is-max-desktop">
             <div class="hero-body">
                 <h2 class="title is-2 has-text-centered mb-6">Experiment Demo 🎬</h2>
-
-                <!-- Flexbox container for video and text -->
-                <div class="video-and-text-container">
-                    <div class="video-container-9x16">
-                        <video id="demo-video" autoplay controls muted loop>
-                            <source src="static/videos/demo.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-
-                    <!-- Text content beside the video -->
-                    <div class="content is-medium">
-                        <h3><strong>Experiment Details:</strong></h3>
-                        <p><strong>1) Data Collection:</strong> Collect various types of biosignals including EEG, heart rate, blood oxygen levels, facial expressions (muscle activity analysis), and speech audio.</p>
-                        <p><strong>2) Participant Tasks:</strong> Participants are required to make statements under different scenarios (e.g., merit student evaluation, job interviews) to ensure data diversity and contextual complexity.</p>
-                        <p><strong>3) Data Processing:</strong> The collected raw data is standardized and processed to form a complete multimodal deception detection dataset, which serves as the foundation for subsequent model training.</p>
+                <div class="columns is-centered">
+                    <div class="column is-6 has-text-centered">
+                        <div class="video-container-9x16">
+                            <video id="demo-video" autoplay controls muted loop>
+                                <source src="static/videos/demo.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -202,4 +187,4 @@
 
 </body>
 
-</html>
+</html> 
