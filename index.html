@@ -34,18 +34,15 @@
         }
 
         /* Keep video responsive with a 16:9 aspect ratio */
-        .video-container-16x9 {
-            width: 100%;
-            position: relative;
-            padding-top: 56.25%; /* 16:9 Aspect Ratio */
-        }
 
-        .video-container-16x9 video {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+
+        .video-container-9x16 {
+          position: relative;
+          padding-bottom: 177.78%; /* 9:16 aspect ratio */
+          height: 0;
+          overflow: hidden;
+          border-radius: 12px;
+          box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
         }
 
         /* Adjust navbar if necessary */
@@ -143,9 +140,9 @@
                 <h2 class="title is-2 has-text-centered mb-6">Experiment Demo 🎬</h2>
                 <div class="columns is-centered">
                     <div class="column is-6 has-text-centered">
-                        <div class="video-container-16x9">
+                        <div class="video-container-9x16">
                             <video id="demo-video" autoplay controls muted loop>
-                                <source src="static/videos/research_demo.mp4" type="video/mp4">
+                                <source src="static/videos/demo.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
                             </video>
                         </div>
