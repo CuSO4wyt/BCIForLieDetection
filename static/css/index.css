@@ -133,5 +133,21 @@ body {
   font-size: smaller;
 }
 
+.video-container-9x16 {
+  position: relative;
+  padding-bottom: 177.78%; /* 9:16 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.video-container-9x16 video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
 
