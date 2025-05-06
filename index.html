@@ -56,16 +56,21 @@
             z-index: -1; /* Ensure the GIFs stay behind the main content */
         }
         
+
         .left-gif {
             left: 0;
             background-image: url('gif1.gif'); /* Replace with your actual GIF path */
-            background-size: cover;
+            background-size: contain; /* Ensures GIF scales to fit within the element */
+            width: 5%; /* Adjust to desired size */
+            height: 100%;
         }
         
         .right-gif {
             right: 0;
             background-image: url('gif2.gif'); /* Replace with your actual GIF path */
-            background-size: cover;
+            background-size: contain; /* Ensures GIF scales to fit within the element */
+            width: 5%; /* Adjust to desired size */
+            height: 100%;
         }
 
         
