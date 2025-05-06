@@ -47,6 +47,27 @@
             margin: 0 auto;
         }
 
+                /* Style for adding GIFs to the left and right sides */
+        .gif-decor {
+            position: fixed;
+            top: 0;
+            width: 10%; /* Adjust width as necessary */
+            height: 100%;
+            z-index: -1; /* Ensure the GIFs stay behind the main content */
+        }
+        
+        .left-gif {
+            left: 0;
+            background-image: url('gif1.gif'); /* Replace with your actual GIF path */
+            background-size: cover;
+        }
+        
+        .right-gif {
+            right: 0;
+            background-image: url('gif2.gif'); /* Replace with your actual GIF path */
+            background-size: cover;
+        }
+
         
                 
 
@@ -203,6 +224,14 @@
             </div>
         </div>
     </section>
+
+            
+            <!-- Left-side GIF decoration -->
+        <div class="gif-decor left-gif"></div>
+        
+        <!-- Right-side GIF decoration -->
+        <div class="gif-decor right-gif"></div>
+
 
     <!-- Footer Section -->
     <footer class="footer">
